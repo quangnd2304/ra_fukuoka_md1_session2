@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Demo</title>
+</head>
+
+<body>
+    <form action="" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Information</legend>
+            Student ID: <input type="text" name="studentId" id="studentId" /><br>
+            Student Name: <input type="text" name="studentName" id="studentName" /><br />
+            Password: <input type="password" name="pass" id="pass" /><br />
+            Confirm Password: <input type="password" name="confirmPass" id="confirmPasss"> <br>
+        </fieldset>
+        CMT: <input type="hidden" name="cmt" id="cmt" value="12345" /><br>
+        Hobbies: <input type="checkbox" name="hobbies" id="football" /><label for="football">Football</label>
+        <input type="checkbox" name="hobbies" id="tennis"><label for="tennis">Tennis</label>
+        <input type="checkbox" name="hobbies" id="basketball"><label for="basketball">Basketball</label><br>
+        Sex: <input type="radio" name="sex" id="male" /><label for="male">Male</label>
+        <input type="radio" name="sex" id="female" /><label for="female">Female</label>
+        <input type="radio" name="sex" id="other" /><label for="other">Others</label><br>
+        Avatar: <input type="file" name="avatar" id="avatar" /><br>
+        Favorite Color: <input type="color" name="color" id="color" /><br>
+        Ngày/Tháng/Năm: <input type="date" name="date" id="date" /><br>
+        Ngày/Tháng/Năm Giờ-Phút-Giây: <input type="datetime-local" name="dl" id="dl" /><br>
+        Giờ-Phút-Giây: <input type="time" name="time" id="time" /><br>
+        Tháng/Năm: <input type="month" name="month" id="month" /><br>
+        Age: <input type="number" name="age" id="age" /><br>
+        Mark: <input type="range" name="mark" id="mark" min="0" max="10" /><br>
+        City: <select name="city" id="city">
+            <option value="HN">Hà Nội</option>
+            <option value="ĐN">Đà Nẵng</option>
+            <option value="HCM">Hồ Chí Minh</option>
+            <option value="Fk">Fukuoka</option>
+        </select><br>
+        Address: <textarea name="Address" id="address" cols="50" rows="5"></textarea><br>
+        <input type="button" value="OK" />
+        <input type="image" src="images/turnOn.png" alt="Turn On" width="30" height="30" />
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+
+    </form>
+</body>
+
+</html>

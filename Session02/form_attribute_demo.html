@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Demo</title>
+</head>
+
+<body>
+    <!-- action: url của server nhận dữ liệu của form -->
+    <!-- 
+        method:
+            GET: 
+    -->
+    <form action="" method="get" enctype="">
+        <!-- Thẻ input: Cho phép người dùng nhập dữ liệu trên form -->
+        <label for="studentId">Student Id</label>
+        <input type="text" id="studentId" name="studentId" value="" placeholder="Nhập vào tên của bạn"
+            autocomplete="off" autofocus required /><br />
+        <label for="studentName">Student Name</label>
+        <input type="text" name="studentName" id="studentName" value="Nguyễn Duy Quang" readonly /><br />
+        <label for="cmt">CMT</label>
+        <input type="text" name="cmt" id="cmt" value="1323423423" disabled /><br />
+        <label for="phone">Phone</label>
+        <input type="text" name="phone" id="phone" maxlength="10" /><br />
+        <label for="city">City</label>
+        <input type="text" name="city" id="city" list="listCity" placeholder="Nhập vào thành phố của bạn" /><br />
+        <datalist id="listCity">
+            <option value="HN">Hà Nội</option>
+            <option value="ĐN">Đà Nẵng</option>
+            <option value="HCM">Hồ Chí Minh</option>
+            <option value="Fukuoka">Fukuoka</option>
+        </datalist>
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" min="18" max="40" /><br />
+        <label for="avatar">Avatar</label>
+        <input type="file" name="avatar" id="avatar" multiple /><br />
+        <input type="submit" value="Submit" />
+    </form>
+</body>
+
+</html>
